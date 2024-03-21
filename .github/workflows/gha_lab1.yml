@@ -6,8 +6,6 @@ on:
       myinput:
         type: string 
         description: Java Version
-      message:
-        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
