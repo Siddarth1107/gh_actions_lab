@@ -7,12 +7,14 @@ on:
         type: string 
         description: Java Version
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+  build:
+     runs-on: ubuntu-latest
+     steps:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
